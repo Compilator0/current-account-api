@@ -27,7 +27,7 @@ Use Maven commands to build and run the application.
 
 ```bash
 mvn clean # To clean the project.
-mvn install # To install and build the jar. The jar generated is in the amazingbank/target subdirectory.
+mvn install # To compile the code and build the jar. The jar generated is in the amazingbank/target subdirectory.
 ```
 
 ## Run Junit tests with maven
@@ -40,7 +40,7 @@ mvn test
 The API can runs in two modes:
 
 **Standard mode :**
-Type the command :
+Go to the "target" at the project's root folder and type the command :
 ```
 java -jar amazingbank-0.0.1-SNAPSHOT.jar # run in standard mode from the .jar snapshot.
 ```
@@ -49,14 +49,21 @@ java -jar amazingbank-0.0.1-SNAPSHOT.jar # run in standard mode from the .jar sn
 Prerequisite : Make sure to have docker environment installed!
 The dockerfile to run the API can be found in the subFolder "/ops" at the root of the project.
 
-After the jar is builded by maven, navigate to the project root folder and type the commands below in a bash :
+After the jar is builded by maven, navigate to the project's root folder and type the commands below in a bash :
 ```
 > docker build -t amazingbank -f ops/Dockerfile .
 > docker run -d -p 8284:8284 --name amazingbank -it amazingbank
 ```
 
-Once the SpringBoot application is lauched, you can access the API in a web browser through the url : http://localhost:8284/swagger-ui/index.html
-To access the H2 Console realtime database, open the url : http://localhost:8284/h2-console (user: cabuser | password: cabPassword0)
+## Accessing to the API Database
+To access the H2 Console realtime database, open the url : http://localhost:8284/h2-console 
+ => JDBC URL : jdbc:h2:mem:cab-database 
+ => user: cabuser 
+ => password: cabPassword0
+
+## Accessing to the API services via swagger-ui client
+
+Once the SpringBoot application is lauched, you can access the API in a web browser through the url : http://localhost:8284/swagger-ui.html
 
 
 ## Code Documentation

@@ -12,7 +12,7 @@
     <artifactId>amazingbank</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>amazingbank</name>
-    <description>Demo project for Spring Boot</description>
+    <description>An API to be used for opening a new “current account” of already existing customers.</description>
     <properties>
         <java.version>11</java.version>
     </properties>
