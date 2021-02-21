@@ -1,4 +1,4 @@
-# current-account-api
+# > CAPMEGINMI - AMAZING BANK API Project <
 
 **This is a spring boot application.**  
 The purpose of the application is to propose an API to be used for opening a new “current account” of already existing customers.
@@ -9,8 +9,6 @@ REQUIREMENTS
 
 JDK-11  
 Maven 3.6.x
-An IDE (i've used Intllij 2019.2.3)
-
 
 SOMES USED DEPENDENCIES
 -----------------------

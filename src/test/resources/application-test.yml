@@ -1,0 +1,7 @@
+logging:
+  level:
+    org.springframework: ERROR
+  pattern:
+    file: "%d %p %c{1.} [%t] %m%n"
+  file:
+    name: cab-tests-logs.log

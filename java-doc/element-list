@@ -1,0 +1,13 @@
+com.capgemini.amazingbank
+com.capgemini.amazingbank.annotations
+com.capgemini.amazingbank.entity
+com.capgemini.amazingbank.exception
+com.capgemini.amazingbank.services.account
+com.capgemini.amazingbank.services.account.controller
+com.capgemini.amazingbank.services.account.model
+com.capgemini.amazingbank.services.transaction
+com.capgemini.amazingbank.services.transaction.controller
+com.capgemini.amazingbank.services.transaction.model
+com.capgemini.amazingbank.services.user
+com.capgemini.amazingbank.services.user.controller
+com.capgemini.amazingbank.services.user.model
